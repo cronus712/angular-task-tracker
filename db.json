@@ -1,0 +1,9 @@
+{
+  "tasks":
+   [
+    { "id": "1", "title": "task one", "date": "Friday 8th 2024","reminder": false },
+    { "id": "2", "title": "task two", "date": "Friday 8th 2024","reminder": false },
+    { "id": "3", "title": "task three ", "date": "Friday 8th 2024","reminder": true },
+    { "id": "4", "title": "task four", "date": "Friday 8th 2024","reminder": true }
+  ]
+}
