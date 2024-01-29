@@ -1,0 +1,16 @@
+.task-item
+ {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 2%;
+ }
+.task-item h3
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
