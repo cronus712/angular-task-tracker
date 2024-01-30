@@ -1,4 +1,5 @@
-<div class="task-item">
+<div class="task-item"
+ [ngClass]="{reminder : task.reminder}">
   <h3>
     {{ task.title }}
     <i class="fa-solid fa-trash" style="color: Tomato;"

@@ -12,5 +12,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
-
+.task-item.reminder {
+  border-left: 9px solid green;
+}
 
