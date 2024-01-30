@@ -11,6 +11,7 @@ import { TaskService } from 'src/app/services/task.service';
 export class TasksComponent implements OnInit {
 
   tasks: Task [] = [];
+  // reminder = false;
 
   constructor(private taskService: TaskService) { }
 
@@ -25,6 +26,10 @@ export class TasksComponent implements OnInit {
       .subscribe(
         () =>this.tasks = this.tasks.filter(
         (t) => t.id !== task.id));
+  }
+
+  toggleReminder(task : Task) {
+    task.reminder = !task.reminder;
   }
 
 }

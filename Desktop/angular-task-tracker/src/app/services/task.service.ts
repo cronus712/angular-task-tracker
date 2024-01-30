@@ -22,4 +22,11 @@ export class TaskService {
     return this.http.delete<Task>(url);
   }
 
+  // toggleReminder(task : Task) {
+
+  //   const url = `${this.apiUrl}/${task.id}`;
+  //   return this.ht
+
+  // }
+
 }
