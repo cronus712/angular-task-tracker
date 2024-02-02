@@ -1,0 +1,21 @@
+<form class="Add-Task-Form" (ngSubmit)="updateTask($event)" *ngIf="showUpdateTask">
+  <h3>{{ head }}</h3>
+  <div class="form-control">
+    <label for="title" > Task</label>
+    <input type="text" name="title" id = "title" placeholder="Add Task" [(ngModel)]="title">
+  </div>
+
+  <div class="form-control">
+    <label for="date" > Day & Date</label>
+    <input type="text" name="date" id = "date" placeholder="Add Date" [(ngModel)]="date">
+  </div>
+
+  <div class="form-control-check">
+    <label for="reminder" > Reminder </label>
+    <input type="checkbox" name="reminder" id = "reminder" [(ngModel)]="reminder">
+  </div>
+
+  <input type="submit" value="Update" class="btn-submit">
+
+
+  </form>

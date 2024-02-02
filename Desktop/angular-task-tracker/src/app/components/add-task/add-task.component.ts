@@ -24,7 +24,11 @@ export class AddTaskComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  ngOnDestroy() {
+    // Unsubscribe to ensure no memory leaks
+    this.subscription.unsubscribe();
+     }
   AddTask() {
 
     if (!this.title || !this.date) {

@@ -11,6 +11,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { TaskItemComponent } from './components/task-item/task-item.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './components/about/about.component';
+import { UpdateTaskComponent } from './components/update-task/update-task.component';
 
 
 const appRoutes: Routes = [
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     TasksComponent,
     TaskItemComponent,
     AddTaskComponent,
-    AboutComponent
+    AboutComponent,
+    UpdateTaskComponent
   ],
   imports: [
     BrowserModule,

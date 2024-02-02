@@ -1,0 +1,60 @@
+.form-control label{
+  display: block;
+  font-family: cursive;
+  padding: 10px;
+  }
+
+  .form-control {
+   margin-bottom: 20px;
+    }
+
+  .Add-Task-Form {
+    box-shadow: 1px 5px 5px rgb(155, 152, 203);
+  }
+
+  .form-control input {
+    width: 90%;
+    max-height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+    padding: 10px;
+  }
+
+  .form-control-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: cursive;
+    margin-bottom: 50px;
+    padding: 10px;
+
+  }
+
+
+
+  .form-control-check input {
+    flex: 1;
+    height: 20px;
+  }
+
+  .btn-submit {
+    display: block;
+    width: 100%;
+    background-color: rgb(219, 216, 250);
+    padding: 10px;
+    border-radius: 2%;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .btn-submit:hover {
+    background-color: rgb(251, 248, 248);
+  }
+ h3
+{
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 10px;
+  color: #2c5df0;
+}

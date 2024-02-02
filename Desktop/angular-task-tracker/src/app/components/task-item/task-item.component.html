@@ -1,6 +1,7 @@
 <div class="task-item"
  [ngClass]="{reminder : task.reminder}"
- (dblclick)="onToggle(task)">
+ (dblclick)="onToggle(task)"
+ (click)="onUpdate()">
   <h3>
     {{ task.title }}
     <i class="fa-solid fa-trash" style="color: Tomato;"

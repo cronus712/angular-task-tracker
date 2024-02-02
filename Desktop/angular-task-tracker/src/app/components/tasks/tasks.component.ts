@@ -40,8 +40,20 @@ export class TasksComponent implements OnInit {
     }
   }
 
+  updateTaskInArray (updatedTask : Task) {
+   const index = this.tasks.findIndex(task => task.id === updatedTask.id);
+   if (index !== -1) {
+    // Update the task in the local array
+    this.tasks[index] = updatedTask;
+  }
+  }
+
+  updateTask(task : Task) {
+    this.taskService.updateTask(task).subscribe((updatedTask) => (this.updateTaskInArray(updatedTask)));
+  }
+
   // updateTaskReminder(task : Task) {
-  //   this.taskService.toggleReminder(task).subscribe(() => this.task.reminder = )
+  //   this.taskService.toggleReminder(task).subscribe(() => this.task.reminder = reminder )
   // }
 
 }

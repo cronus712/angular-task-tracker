@@ -2,8 +2,10 @@
   <app-add-task (onAddTask)="AddTasks($event)"></app-add-task>
   <app-task-item *ngFor="let task of tasks" [task]="task"
   (onDeleteTask)="deleteTask(task)"
-   (onToggleTask)="toggleReminder(task)">
+   (onToggleTask)="toggleReminder(task)"
+   (onUpdateTask)="updateTask(task)">
   </app-task-item>
+  <app-update-task (onUpdateTask)="updateTask($event)"></app-update-task>
 
   <a routerLink="/about">About Page</a>
 </div>
